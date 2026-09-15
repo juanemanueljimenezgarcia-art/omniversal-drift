@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cqxcqvm3ion6h"]
 
+[ext_resource type="Script" uid="uid://ds46a0xxjfd2a" path="res://Scripts/mary.gd" id="1_gdpn1"]
 [ext_resource type="Texture2D" uid="uid://fmpmckb06nay" path="res://sprites/Mary-Sprite1.png" id="1_qms2i"]
 [ext_resource type="Texture2D" uid="uid://77x3l3kf0nnr" path="res://sprites/Mary-Sprite2.png" id="1_s6hq4"]
 [ext_resource type="Texture2D" uid="uid://cecv58xguk4n4" path="res://sprites/Mary-Sprite3.png" id="3_gdpn1"]
@@ -88,49 +89,13 @@ region = Rect2(0, 0, 273, 373)
 atlas = ExtResource("3_gdpn1")
 region = Rect2(0, 367, 281, 367)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rvm8h"]
-atlas = ExtResource("3_gdpn1")
-region = Rect2(281, 367, 281, 367)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a1jaw"]
-atlas = ExtResource("3_gdpn1")
-region = Rect2(562, 367, 281, 367)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tkqj2"]
-atlas = ExtResource("3_gdpn1")
-region = Rect2(843, 367, 281, 367)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4x3dy"]
-atlas = ExtResource("3_gdpn1")
-region = Rect2(1124, 367, 281, 367)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2v4bm"]
-atlas = ExtResource("3_gdpn1")
-region = Rect2(0, 0, 281, 367)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_g5f1b"]
 atlas = ExtResource("3_gdpn1")
 region = Rect2(281, 0, 281, 367)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0igqr"]
-atlas = ExtResource("1_s6hq4")
-region = Rect2(1264, 312, 316, 312)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nb64y"]
-atlas = ExtResource("1_s6hq4")
-region = Rect2(948, 312, 316, 312)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5uqce"]
-atlas = ExtResource("1_s6hq4")
-region = Rect2(632, 312, 316, 312)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w2f7y"]
-atlas = ExtResource("1_s6hq4")
-region = Rect2(316, 312, 316, 312)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_as5a8"]
-atlas = ExtResource("1_s6hq4")
-region = Rect2(0, 312, 316, 312)
+atlas = ExtResource("1_qms2i")
+region = Rect2(0, 766, 273, 383)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hwchs"]
 atlas = ExtResource("3_gdpn1")
@@ -172,6 +137,14 @@ region = Rect2(948, 0, 316, 312)
 atlas = ExtResource("1_s6hq4")
 region = Rect2(1264, 0, 316, 312)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6hq4"]
+atlas = ExtResource("1_s6hq4")
+region = Rect2(0, 0, 322, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdpn1"]
+atlas = ExtResource("1_s6hq4")
+region = Rect2(322, 0, 322, 312)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_s7wsd"]
 animations = [{
 "frames": [{
@@ -190,7 +163,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7h0rf")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Ataque_Mary",
 "speed": 5.0
 }, {
@@ -210,7 +183,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_v4j0i")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Caminar_Abajo",
 "speed": 5.0
 }, {
@@ -230,7 +203,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_03tol")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Caminar_Arriba",
 "speed": 5.0
 }, {
@@ -250,34 +223,19 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5ifef")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Caminar_lados",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wwnc5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rvm8h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a1jaw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tkqj2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4x3dy")
 }],
 "loop": 1,
 "name": &"Idle_1",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 2.0,
-"texture": SubResource("AtlasTexture_2v4bm")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_g5f1b")
 }],
@@ -288,18 +246,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0igqr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nb64y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5uqce")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w2f7y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_as5a8")
 }],
 "loop": 1,
 "name": &"Idle_3",
@@ -344,32 +290,45 @@ animations = [{
 "loop": 1,
 "name": &"Salto_Mary",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6hq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdpn1")
+}],
+"loop": 1,
+"name": &"Salto_Mary2",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p32xb"]
-size = Vector2(24, 35)
+size = Vector2(47, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hepi4"]
-size = Vector2(23, 35)
+size = Vector2(49, 10)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1713049152]
+[node name="Mary" type="CharacterBody2D" unique_id=1713049152]
+script = ExtResource("1_gdpn1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1040283447]
-position = Vector2(0, 0.24329714)
-scale = Vector2(0.12110805, 0.11382502)
-sprite_frames = SubResource("SpriteFrames_s7wsd")
-animation = &"Ataque_Mary"
-frame_progress = 0.4171796
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=284175238]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1497540499]
 visible = false
-position = Vector2(0, 0.5)
+
+[node name="AnimacionesMary" type="AnimatedSprite2D" parent="." unique_id=1040283447]
+scale = Vector2(0.2130337, 0.22248009)
+sprite_frames = SubResource("SpriteFrames_s7wsd")
+animation = &"Caminar_Abajo"
+
+[node name="CollisionMary" type="CollisionShape2D" parent="." unique_id=284175238]
+visible = false
+position = Vector2(1.5, 31)
 shape = SubResource("RectangleShape2D_p32xb")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=528258498]
+[node name="Area2DMary" type="Area2D" parent="." unique_id=528258498]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=959804666]
+[node name="CollisionMary2" type="CollisionShape2D" parent="Area2DMary" unique_id=959804666]
 visible = false
-position = Vector2(-1.5, 0.5)
+position = Vector2(-1.5, 31)
 shape = SubResource("RectangleShape2D_hepi4")
