@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://kfgsrocfafbx"]
+
+[ext_resource type="Texture2D" uid="uid://dm3ee3lmq354n" path="res://sprites/Fire 32x.png" id="1_u0wdr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0wdr"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubtrf"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrr5x"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbswb"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnob2"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omall"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmjys"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnl0f"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wblnm"]
+atlas = ExtResource("1_u0wdr")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s7rlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0wdr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubtrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrr5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbswb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnob2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omall")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmjys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnl0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wblnm")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Llama" type="Node2D" unique_id=2118580323]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1753127801]
+scale = Vector2(0.84375, 1.28125)
+sprite_frames = SubResource("SpriteFrames_s7rlf")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.24262981

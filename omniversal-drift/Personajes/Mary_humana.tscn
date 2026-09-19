@@ -48,6 +48,7 @@ script = ExtResource("1_h1qbg")
 visible = false
 
 [node name="AnimacionesMH" type="AnimatedSprite2D" parent="." unique_id=1526780268]
+visible = false
 scale = Vector2(0.24732141, 0.22610803)
 sprite_frames = SubResource("SpriteFrames_s7wsd")
 animation = &"Caminar_abajo"

@@ -312,9 +312,6 @@ size = Vector2(49, 10)
 [node name="Mary" type="CharacterBody2D" unique_id=1713049152]
 script = ExtResource("1_gdpn1")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1497540499]
-visible = false
-
 [node name="AnimacionesMary" type="AnimatedSprite2D" parent="." unique_id=1040283447]
 scale = Vector2(0.2130337, 0.22248009)
 sprite_frames = SubResource("SpriteFrames_s7wsd")
