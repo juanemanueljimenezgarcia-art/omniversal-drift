@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dst3vk7bcgg8s"
-path="res://.godot/imported/sprite-Ian2.png-281f13a8a0b01f210b761accb26e6065.ctex"
+uid="uid://bdqupgbn80rm3"
+path="res://.godot/imported/Camino_Torcido.jpg-21009ed30caf3244e3aedc139fb2cd48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/sprite-Ian2.png"
-dest_files=["res://.godot/imported/sprite-Ian2.png-281f13a8a0b01f210b761accb26e6065.ctex"]
+source_file="res://sprites/Camino_Torcido.jpg"
+dest_files=["res://.godot/imported/Camino_Torcido.jpg-21009ed30caf3244e3aedc139fb2cd48.ctex"]
 
 [params]
 
