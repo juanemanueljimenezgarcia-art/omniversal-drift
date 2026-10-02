@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c3bxa4a37jtie" path="res://sprites/Suelo-Orfanato.png" id="2_jaerc"]
 [ext_resource type="PackedScene" uid="uid://cqxcqvm3ion6h" path="res://Personajes/Mary.tscn" id="2_kl1xg"]
 [ext_resource type="Texture2D" uid="uid://dl168hmo2pg8n" path="res://sprites/orfanato-Capa2.png" id="3_pb3o5"]
+[ext_resource type="Script" uid="uid://d1woxp0cvqe16" path="res://Escenas/Escenarios/puerta_salida.gd" id="5_7uppv"]
 [ext_resource type="Texture2D" uid="uid://cfdln4yjh0scf" path="res://sprites/Traspasables-supongo.png" id="5_768xh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_768xh"]
@@ -19351,6 +19352,9 @@ texture = ExtResource("5_768xh")
 [sub_resource type="TileSet" id="TileSet_s7wsd"]
 sources/0 = SubResource("TileSetAtlasSource_18nqn")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wsd"]
+size = Vector2(84, 53)
+
 [node name="Orfanato" type="Node2D" unique_id=442652580]
 
 [node name="Capa1" type="TileMapLayer" parent="." unique_id=1281356192]
@@ -19362,7 +19366,7 @@ tile_map_data = PackedByteArray("AADt/wkAAgAAAA0AAADt/woAAgAAAA4AAADt/wsAAgAAAA8
 tile_set = SubResource("TileSet_uu6nu")
 
 [node name="Mary" parent="." unique_id=1713049152 instance=ExtResource("2_kl1xg")]
-position = Vector2(374, 502)
+position = Vector2(448, 795)
 
 [node name="Camera2D" type="Camera2D" parent="Mary" unique_id=546137265]
 limit_left = -289
@@ -19377,3 +19381,12 @@ tile_set = SubResource("TileSet_pb3o5")
 [node name="Capa4" type="TileMapLayer" parent="." unique_id=190246364]
 tile_map_data = PackedByteArray("AAAQADkAAAA4AC8AAAAQADoAAAA4ADAAAAAQADsAAAA4ADEAAAARADgAAAA5AC4AAAARADkAAAA5AC8AAAARADoAAAA5ADAAAAARADsAAAA5ADEAAAASADgAAAA6AC4AAAASADkAAAA6AC8AAAASADoAAAA6ADAAAAASADsAAAA6ADEAAAATADgAAAA7AC4AAAATADkAAAA7AC8AAAATADoAAAA7ADAAAAATADsAAAA7ADEAAAAUADgAAAA8AC4AAAAUADkAAAA8AC8AAAAUADoAAAA8ADAAAAAUADsAAAA8ADEAAAAVADkAAAA9AC8AAAAVADoAAAA9ADAAAAAVADsAAAA9ADEAAAAgADgAAAA4AC8AAAAgADkAAAA4ADAAAAAgADoAAAA4ADEAAAAhADcAAAA5AC4AAAAhADgAAAA5AC8AAAAhADkAAAA5ADAAAAAhADoAAAA5ADEAAAAiADcAAAA6AC4AAAAiADgAAAA6AC8AAAAiADkAAAA6ADAAAAAiADoAAAA6ADEAAAAjADcAAAA7AC4AAAAjADgAAAA7AC8AAAAjADkAAAA7ADAAAAAjADoAAAA7ADEAAAAkADcAAAA8AC4AAAAkADgAAAA8AC8AAAAkADkAAAA8ADAAAAAkADoAAAA8ADEAAAAlADgAAAA9AC8AAAAlADkAAAA9ADAAAAAlADoAAAA9ADEAAAAmADkAAAA4AC8AAAAmADoAAAA4ADAAAAAmADsAAAA4ADEAAAAnADgAAAA5AC4AAAAnADkAAAA5AC8AAAAnADoAAAA5ADAAAAAnADsAAAA5ADEAAAAoADgAAAA6AC4AAAAoADkAAAA6AC8AAAAoADoAAAA6ADAAAAAoADsAAAA6ADEAAAApADgAAAA7AC4AAAApADkAAAA7AC8AAAApADoAAAA7ADAAAAApADsAAAA7ADEAAAAqADgAAAA8AC4AAAAqADkAAAA8AC8AAAAqADoAAAA8ADAAAAAqADsAAAA8ADEAAAArADkAAAA9AC8AAAArADoAAAA9ADAAAAArADsAAAA9ADEAAAALADgAAAA4ADMAAAALADkAAAA4ADQAAAALADoAAAA4ADUAAAALADsAAAA4ADYAAAAMADgAAAA5ADMAAAAMADkAAAA5ADQAAAAMADoAAAA5ADUAAAAMADsAAAA5ADYAAAANADgAAAA6ADMAAAANADkAAAA6ADQAAAANADoAAAA6ADUAAAANADsAAAA6ADYAAAAOADgAAAA7ADMAAAAOADkAAAA7ADQAAAAOADoAAAA7ADUAAAAOADsAAAA7ADYAAAAPADkAAAA8ADQAAAAPADoAAAA8ADUAAAAPADsAAAA8ADYAAAAsADgAAAA6ADoAAAAsADkAAAA6ADsAAAAsADoAAAA6ADwAAAAtADgAAAA7ADoAAAAtADkAAAA7ADsAAAAtADoAAAA7ADwAAAAtADsAAAA7AD0AAAAuADgAAAA8ADoAAAAuADkAAAA8ADsAAAAuADoAAAA8ADwAAAAHADgAAAA6ADoAAAAHADkAAAA6ADsAAAAHADoAAAA6ADwAAAAIADgAAAA7ADoAAAAIADkAAAA7ADsAAAAIADoAAAA7ADwAAAAIADsAAAA7AD0AAAAJADgAAAA8ADoAAAAJADkAAAA8ADsAAAAJADoAAAA8ADwAAAA=")
 tile_set = SubResource("TileSet_s7wsd")
+
+[node name="PuertaSalida" type="Area2D" parent="." unique_id=16098712]
+script = ExtResource("5_7uppv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaSalida" unique_id=167108597]
+position = Vector2(457, 1013)
+shape = SubResource("RectangleShape2D_s7wsd")
+
+[connection signal="body_entered" from="PuertaSalida" to="PuertaSalida" method="_on_body_entered"]

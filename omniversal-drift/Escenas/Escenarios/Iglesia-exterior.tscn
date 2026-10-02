@@ -13723,7 +13723,7 @@ position = Vector2(588, -129)
 position = Vector2(496, -131)
 
 [node name="Mary" parent="Nivel" unique_id=1713049152 instance=ExtResource("5_i7h7b")]
-position = Vector2(572, 479)
+position = Vector2(512, 238)
 
 [node name="Camera2D2" type="Camera2D" parent="Nivel/Mary" unique_id=1661806463]
 visible = false
