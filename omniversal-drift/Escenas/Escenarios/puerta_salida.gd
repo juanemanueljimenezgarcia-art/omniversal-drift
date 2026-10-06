@@ -1,9 +1,8 @@
 extends Area2D
 
-# Ruta a la escena bosque_1 (verifica la carpeta exacta en tu Sistema de Archivos)
 const ESCENA_BOSQUE = "res://Escenas/Escenarios/bosque_1.tscn"
 
 func _on_body_entered(body: Node2D) -> void:
-	# Verifica que sea el personaje (Mary) quien toca la reja
 	if body.name == "Mary":
+		Global.punto_entrada = "EntradaBosque1"
 		get_tree().change_scene_to_file(ESCENA_BOSQUE)
