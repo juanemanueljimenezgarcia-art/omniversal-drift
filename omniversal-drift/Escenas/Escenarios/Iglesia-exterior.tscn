@@ -13727,6 +13727,7 @@ position = Vector2(512, 238)
 
 [node name="Camera2D2" type="Camera2D" parent="Nivel/Mary" unique_id=1661806463]
 visible = false
+zoom = Vector2(1.6, 1.6)
 limit_left = -126
 limit_top = -385
 limit_right = 1144
